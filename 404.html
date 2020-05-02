@@ -3,13 +3,29 @@
 <script>
     console.log("404.html")
     var url = purl();
-    if (url.attr('host') == 'yuncheng.website') {
+    if (url.attr('host') == 'weikeqin.github.io') {
+        var old_url = url.attr('source');
+        var new_url = old_url.replace('weikeqin.github.io/domain_redirection.github.io', "weikeqin.com");
+        console.log("old_url = " + old_url);
+        console.log("new_url = " + new_url);
+        window.location.replace(new_url);
+    } else if (url.attr('host') == 'www.weikeqin.github.io') {
+        var old_url = url.attr('source');
+        var new_url = old_url.replace('www.weikeqin.github.io/domain_redirection.github.io', "weikeqin.com");
+        console.log("old_url = " + old_url);
+        console.log("new_url = " + new_url);
+        window.location.replace(new_url);
+    } else if (url.attr('host') == 'yuncheng.website') {
         var old_url = url.attr('source');
         var new_url = old_url.replace('yuncheng.website', "weikeqin.com");
+        console.log("old_url = " + old_url);
+        console.log("new_url = " + new_url);
         window.location.replace(new_url);
     } else if (url.attr('host') == 'www.yuncheng.website') {
         var old_url = url.attr('source');
         var new_url = old_url.replace('www.yuncheng.website', "weikeqin.com");
+        console.log("old_url = " + old_url);
+        console.log("new_url = " + new_url);
         window.location.replace(new_url);
     } else {
         window.location.href = "http://weikeqin.com";
