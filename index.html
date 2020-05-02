@@ -1,1 +1,18 @@
-<script type="text/javascript">window.location.href="http://weikeqin.com";</script>
+
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
+<script type="text/javascript">
+var url = purl();
+if (url.attr('host') == 'yuncheng.website') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('yuncheng.website', "weikeqin.com");
+    window.location.replace(new_url); 
+}else if (url.attr('host') == 'www.yuncheng.website') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('www.yuncheng.website', "weikeqin.com");
+    window.location.replace(new_url);
+}else {
+    window.location.href="http://weikeqin.com";
+}
+    
+</script>
